@@ -258,32 +258,6 @@ color: #FFFFFF;
 }
 
 </style>
-<SCRIPT type=text/javascript>
-	function $(xixi) {
-		return document.getElementById(xixi);
-	}
-//修改字型大小
-function doZoom(size){
-	if(size==12){
-		$("contentText").style.fontSize = size + "px";
-		$("fs12").style.display = "";
-		$("fs14").style.display = "none";
-		$("fs16").style.display = "none";
-	}
-	if(size==14){
-		$("contentText").style.fontSize = size + "px";
-		$("fs12").style.display = "none";
-		$("fs14").style.display = "";
-		$("fs16").style.display = "none";
-	}
-	if(size==16){
-		$("contentText").style.fontSize = size + "px";
-		$("fs12").style.display = "none";
-		$("fs14").style.display = "none";
-		$("fs16").style.display = "";
-	}
-}
-</SCRIPT>
 
 <!--小icon-->
 <link href="img/Sanfu.ico" rel="Shortcut Icon" type="image/x-icon"></link>
@@ -405,22 +379,6 @@ function doZoom(size){
  <!-- News 最新消息 -->
 <div class="container">
   <h2><i class="fa fa-newspaper-o fa-1x"></i> 最新消息 <small class=" wow infinite flash" >News</small></h2>
-  <div id=fs12 style="DISPLAY: none">
-		<a href="javascript:doZoom(16)">大</a> 
-		<a href="javascript:doZoom(14)">中</a> 
-		<span>小</span>
-	</div>
-	<div id=fs14>
-		<a href="javascript:doZoom(16)">大</a> 
-		<span>中</span> 
-		<a href="javascript:doZoom(12)">小</a>
-	</div>
-	<div id=fs16 style="DISPLAY: none">
-	<span>大</span> 
-	<a href="javascript:doZoom(14)">中</a> 
-	<a href="javascript:doZoom(12)">小</a>
-	</div>
-  
     <ul class="timeline wow fadeInLeft">
       <li class=" wow fadeInLeft">
           <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
