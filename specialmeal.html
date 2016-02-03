@@ -195,8 +195,86 @@ color: #FFFFFF;
 </head>
 <!-- body start -->
 <body> 
+
+<!--首頁標頭-->
+  <style type="text/css">
+.navbar-default {
+  background : #383434;
+  border : #817a7a;
+}
+.navbar-default .navbar-brand {
+  color: #fdfdfd;
+  font-size: 25px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 17px;
+  color: #fdfdfd;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background : #817a7a;
+  font-size: 20px;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background : #817a7a;
+  font-size: 20px;
+}
+.navbar-default .navbar-toggle {
+  border : #817a7a;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background : #817a7a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background : #fdfdfd;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border : #fdfdfd;
+}
+.navbar-default .navbar-link {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fdfdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background : #817a7a;
+  }
+}
+</style>
+
   <!-- 頁首 -->
- <header class="navbar navbar-inverse navbar-fixed-top" role="banner" data-spy="affix" data-offset-top="80">
+ <header class="navbar navbar-default navbar-fixed-top" role="banner" data-spy="affix" data-offset-top="80">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
