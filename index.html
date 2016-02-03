@@ -49,49 +49,7 @@ $(function () {
  
 
 <style type="text/css">
-/*首頁框*/
 
-.nav-tabs {
-    position: relative;
-    clear:both;
-    border-bottom: 1px #2E8B57;
-
-}
-
-.nav-tabs > li {
-    float: left;
-    margin-bottom: -1px;
-
-}
-
-.nav-tabs > li > a {
-    margin-right: 2px;
-    margin-top: 4px;
-    line-height: .85;
-    border: 1px  #2E8B57;
-    border-radius: 4px 4px 0 0;
-    color: #ffffff;
-    background-color: #2E8B57;
-}
-
-.nav-tabs > li > a:hover {
-    border-color: #2E8B57;
-    color: #ffffff;
-    /*滑鼠經過*/
-    background-color: #00AA55;
-}
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-    color: #fff;
-    cursor: default;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background-color:  #2E8B57;
-    border-bottom-color: #2E8B57;
-}
 /*大框的背景*/
 .jumbotron{
 
@@ -265,7 +223,83 @@ color: #FFFFFF;
 </head>
   <!-- body start -->
 <body>
-  
+
+  <!--首頁標頭-->
+  <style type="text/css">
+.navbar-default {
+  background : #383434;
+  border : #817a7a;
+}
+.navbar-default .navbar-brand {
+  color: #fdfdfd;
+  font-size: 25px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 17px;
+  color: #fdfdfd;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background : #817a7a;
+  font-size: 20px;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background : #817a7a;
+  font-size: 20px;
+}
+.navbar-default .navbar-toggle {
+  border : #817a7a;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background : #817a7a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background : #fdfdfd;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border : #fdfdfd;
+}
+.navbar-default .navbar-link {
+  color: #fdfdfd;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fdfdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background : #817a7a;
+  }
+}
+</style>
   <!--facebook-->
 
 <div id="fb-root"></div>
@@ -280,7 +314,7 @@ color: #FFFFFF;
   
   <!-- 頁首 -->
 
- <header class="navbar navbar-inverse navbar-fixed-top" role="banner" data-spy="affix" data-offset-top="80">
+ <header class="navbar navbar-default navbar-fixed-top" role="banner" data-spy="affix" data-offset-top="80">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -295,7 +329,9 @@ color: #FFFFFF;
           <ul class="nav navbar-nav">
             <li><a   href="http://sanfubrunch.github.io/web/index.html">首頁</a></li>
              <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cutlery"></i> 產品介紹 <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cutlery"></i> 產品介紹 <span 
+
+class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li class="dropdown-header"><h4><strong><i class="fa fa-hand-o-right"></i> 經典早午餐</strong><h4></li>
               <li><a href="http://sanfubrunch.github.io/web/bread.html"><i class="fa fa-dot-circle-o"></i> 吐司漢堡</a></li>
@@ -308,15 +344,21 @@ color: #FFFFFF;
             </ul>
             </li>
              <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-external-link"></i> 相關連結<span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-external-link"></i> 相關連結<span 
+
+class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="https://www.facebook.com/mwdLongsingSt"  target="_blank" ><i class="fa fa-facebook"></i> FB粉絲團</a></li>
               <li><a href="http://www.superqin.com.tw/mwd/"  target="_blank" ><i class="fa fa-user"></i> 總公司網址</a></li>
               <li><a href="https://fadenbook.fda.gov.tw/index.aspx"  target="_blank" ><i class="fa fa-book"></i> 食品藥物管理屬</a></li>
             </ul>
             </li>
-            <li><a  href="http://sanfubrunch.github.io/web/location.html" data-toggle="tooltip" data-placement="bottom" title="Google Map"><i class="fa fa-map-marker"></i> 尋找我們</a></li>
-            <li><a  href="http://sanfubrunch.github.io/web/comment.html" data-toggle="tooltip" data-placement="bottom" title="有什麼話都可以說喔!"><i class="fa fa-commenting-o"></i> 留言板</a></li>
+            <li><a  href="http://sanfubrunch.github.io/web/location.html" data-toggle="tooltip" data-placement="bottom" title="Google Map"><i class="fa fa-map-
+
+marker"></i> 尋找我們</a></li>
+            <li><a  href="http://sanfubrunch.github.io/web/comment.html" data-toggle="tooltip" data-placement="bottom" title="有什麼話都可以說喔!"><i class="fa fa-
+
+commenting-o"></i> 留言板</a></li>
           </ul>
             <form class="navbar-form navbar-right" role="search"  method="get" name="searchform" action="http://www.google.com/search" target="_blank">
             <input type="hidden" name="sitesearch" value="http://sanfubrunch.github.io/web/" />
@@ -337,7 +379,9 @@ color: #FFFFFF;
         <h4 class="text-center lead  wow  bounceIn" data-wow-duration="2s">Cafe &amp; Tea, Brunch </h4>
         <h4 class="text-center lead  wow  bounceIn" data-wow-duration="2s">Marvelous, yummy &amp; delectable breakfast</h4>
         <p></p>
-        <p class="text-center  wow  bounceIn" data-wow-duration="3s"><a href="#jumpToSlider" class="btn btn-lg btn-outline ">開始探索三福店  <i class="fa fa-play-circle-o fa-1x"></i></a>
+        <p class="text-center  wow  bounceIn" data-wow-duration="3s"><a href="#jumpToSlider" class="btn btn-lg btn-outline ">開始探索三福店  <i class="fa fa-play-
+
+circle-o fa-1x"></i></a>
         <!--找到新家再加上去 
           <span class="glyphicon glyphicon-circle-arrow-right"></span>--></p>
         
@@ -389,10 +433,14 @@ color: #FFFFFF;
               <h3 class="timeline-title lead">本周特色介紹 <small> 2016.1.26</small></h3>
             </div>
             <div class="timeline-body">
-              <p>吉事吐司為本店的超級人氣商品，看似普通的土司，當你咬下一口，就會被滿滿的蒜、起司以及奶油的香味填滿您的味蕾，而沙拉又剛好彌補了多片吐司所帶來的乾燥，吃起來相當順口，絕對值得一試!!</p>
+              <p>吉事吐司為本店的超級人氣商品，看似普通的土司，當你咬下一口，就會被滿滿的蒜、起司以及奶油的香味填滿您的味蕾，而沙拉又剛好彌補了多片吐司所帶來的乾燥，吃
+
+起來相當順口，絕對值得一試!!</p>
               <p></p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐點請參考"特色餐點"</a></p>
-            <img src="img/s1.jpg"  class=" img-responsive">
+              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐
+
+點請參考"特色餐點"</a></p>
+            <img src="img/s1.jpg"  class=" img-responsive" hight="200" width="283">
             </div>
           </div>
         </li>
@@ -416,8 +464,10 @@ color: #FFFFFF;
               <p>卡拉雞腿堡</p>
               <p>香烤雞腿堡</p>
               <p></p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/bread.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的吐司漢堡在這裡!!</a></p>
-            <img src="img/b2.jpg"  class=" img-responsive">
+              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/bread.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的吐司漢堡在這
+
+裡!!</a></p>
+            <img src="img/b2.jpg"  class=" img-responsive" hight="400" width="283">
             </div>
           </div>
         </li>
@@ -437,8 +487,10 @@ color: #FFFFFF;
               <p>鮪魚焗烤</p>
               <p>火腿焗烤</p>
               <p>總匯焗烤</p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐點請參考"特色餐點"</a></p>
-            <img src="img/s3.jpg"  class=" img-responsive">
+              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐
+
+點請參考"特色餐點"</a></p>
+            <img src="img/s3.jpg"  class=" img-responsive" hight="200" width="283">
             </div>
           </div>
         </li>
@@ -451,10 +503,14 @@ color: #FFFFFF;
             </div>
             <div class="timeline-body">
               <p>燒餅系列</p>
-              <p>燒餅是許多傳統豆漿店必賣的傳統早點，也是顧客回憶中的美食。本店的千層燒餅可搭配許多不同材料來符合消費者口味，像是培根、鮮蔬、幸力蛋等等，不同的搭配都會別有一番風味喔!!</p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐點請參考"特色餐點"</a></p>
+              <p>燒餅是許多傳統豆漿店必賣的傳統早點，也是顧客回憶中的美食。本店的千層燒餅可搭配許多不同材料來符合消費者口味，像是培根、鮮蔬、幸力蛋等等，不同的搭配都會
+
+別有一番風味喔!!</p>
+              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐
+
+點請參考"特色餐點"</a></p>
             
-            <img src="img/s2.png"  class=" img-responsive">
+            <img src="img/s2.png"  class=" img-responsive" hight="200" width="283">
             </div>
           </div>
         </li>
@@ -467,8 +523,10 @@ color: #FFFFFF;
             </div>
             <div class="timeline-body">
               <p>本周商品介紹:義大利麵系列</p>
-              <p>義大利麵是本店的熱門招牌商品，假日時常會賣到供不應求呢!!義大利麵在本店目前有11種不同的口味，除了常見的蘑菇與黑胡椒醬以外，還有青醬、白醬(奶油)與紅醬(茄汁)的選擇，再搭配不同合適的肉品，是不是相當的多元呢!</p>
-            <img src="img/c2.jpg"  class=" img-responsive">
+              <p>義大利麵是本店的熱門招牌商品，假日時常會賣到供不應求呢!!義大利麵在本店目前有11種不同的口味，除了常見的蘑菇與黑胡椒醬以外，還有青醬、白醬(奶油)與紅醬(
+
+茄汁)的選擇，再搭配不同合適的肉品，是不是相當的多元呢!</p>
+            <img src="img/c2.jpg"  class=" img-responsive" hight="400" width="283">
             </div>
           </div>
         </li>
@@ -481,8 +539,10 @@ color: #FFFFFF;
             </div>
             <div class="timeline-body">
               <p>本周套餐推薦:法式套餐、樂活套餐、招牌套餐</p>
-              <p>這三個套餐都是本店最熱銷的套餐組合之一，所有套餐組合都附有15元飲品一杯(補差額可換購部分其他飲品，詳細情形請詢問店家)，套餐除了自己本身都有自己的特色以外，都附有生菜沙拉的搭配，讓顧客吃得輕鬆毫無負擔。請多多支持套餐組合喔!!!</p>
-            <img src="img/i1.jpg"  class=" img-responsive">
+              <p>這三個套餐都是本店最熱銷的套餐組合之一，所有套餐組合都附有15元飲品一杯(補差額可換購部分其他飲品，詳細情形請詢問店家)，套餐除了自己本身都有自己的特色以
+
+外，都附有生菜沙拉的搭配，讓顧客吃得輕鬆毫無負擔。請多多支持套餐組合喔!!!</p>
+            <img src="img/i1.jpg"  class=" img-responsive" hight="200" width="283">
             </div>
           </div>
         </li>
@@ -496,7 +556,13 @@ color: #FFFFFF;
               <h3 class="timeline-title lead">最新商品推薦 <small> 2015.10.26</small></h3>
             </div>
             <div class="timeline-body">
-              <p>即日起，本店推出特色餐點" 焗烤系列 "，有培根、火腿、鮪魚、總匯多種口味!! 利用厚片做為基底，放上香噴噴的材料再淋上特製水果醬，最後在鋪上一層滿滿的起司進入烤箱。這特別的味道必定會讓您回味無窮... <a  target="_blank" href="https://www.facebook.com/mwdLongsingSt/photos/a.318037694949131.73101.317193521700215/452066318212934/?type=3&theater" data-toggle="tooltip" data-placement="top" title="讚">詳細資料></a></p>
+              <p>即日起，本店推出特色餐點" 焗烤系列 "，有培根、火腿、鮪魚、總匯多種口味!! 利用厚片做為基底，放上香噴噴的材料再淋上特製水果醬，最後在鋪上一層滿滿的起司
+
+進入烤箱。這特別的味道必定會讓您回味無窮... <a  target="_blank" 
+
+href="https://www.facebook.com/mwdLongsingSt/photos/a.318037694949131.73101.317193521700215/452066318212934/?type=3&theater" data-toggle="tooltip" data-placement="top" 
+
+title="讚">詳細資料></a></p>
             </div>
           </div>
         </li>
@@ -508,7 +574,11 @@ color: #FFFFFF;
               <h3 class="timeline-title lead">套餐太划算<small> 2015.10.25</small></h3>
             </div>
             <div class="timeline-body">
-              <p>本店套餐系列都會贈送NT$15飲料一杯，不管紅茶、奶茶、檸檬紅茶等等超級好喝的飲品任你/妳挑選，可以自由搭配自己喜歡的組合喔!!(超過NT$15之飲品要補差額，部分商品無法補差價詳見官網資訊)... <a  target="_blank" href="https://www.facebook.com/mwdLongsingSt/photos/a.747077575378472.1073741825.317193521700215/747077522045144/?type=3&theater" data-toggle="tooltip" data-placement="top" title="讚">詳細資料></a></p>
+              <p>本店套餐系列都會贈送NT$15飲料一杯，不管紅茶、奶茶、檸檬紅茶等等超級好喝的飲品任你/妳挑選，可以自由搭配自己喜歡的組合喔!!(超過NT$15之飲品要補差額，部分
+
+商品無法補差價詳見官網資訊)... <a  target="_blank" href="https://www.facebook.com/mwdLongsingSt/photos/a.747077575378472.1073741825.317193521700215/747077522045144/?
+
+type=3&theater" data-toggle="tooltip" data-placement="top" title="讚">詳細資料></a></p>
             </div>
           </div>
         </li>
@@ -540,8 +610,12 @@ color: #FFFFFF;
       <img src="img/6.jpg" alt="套餐">
       <div class="caption">
          <h2>食物最多樣</h2>
-        <p>本店的食材相當的多元，除了傳統早餐店有的土司、漢堡、蛋餅外，本店還有許多特色主食，像是義大利麵、潛艇堡、燒餅等等特色商品，還提供不同的套餐組合，顧客可以依照自己的喜好挑選搭配最適合自己的早點!<p>
-          <p><a href="http://sanfubrunch.github.io/web/combomeal.html" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="好評推薦">套餐推薦 &raquo;&raquo;</a></p>
+        <p>本店的食材相當的多元，除了傳統早餐店有的土司、漢堡、蛋餅外，本店還有許多特色主食，像是義大利麵、潛艇堡、燒餅等等特色商品，還提供不同的套餐組合，顧客可以依照
+
+自己的喜好挑選搭配最適合自己的早點!<p>
+          <p><a href="http://sanfubrunch.github.io/web/combomeal.html" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" 
+
+data-placement="bottom" title="好評推薦">套餐推薦 &raquo;&raquo;</a></p>
       </div>
     </div>
   </div>
@@ -552,7 +626,9 @@ color: #FFFFFF;
         <h2>食材最新鮮</h2>
           <p>不管是飲料或是食品，本店堅持現點現做，希望保持食物的新鮮與溫度，給顧客最新鮮與熱騰騰的早餐饗宴。<p>
           
-          <p><a href="http://sanfubrunch.github.io/web/specialmeal.html" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="不能錯過!!">特色推薦  &raquo;&raquo;</a></p>
+          <p><a href="http://sanfubrunch.github.io/web/specialmeal.html" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" 
+
+data-placement="bottom" title="不能錯過!!">特色推薦  &raquo;&raquo;</a></p>
       </div>
     </div>
   </div>
@@ -562,7 +638,9 @@ color: #FFFFFF;
       <div class="caption">
         <h2>衛生最安全</h2>
             <p>本店依法落實自主管理原則，並依照衛生福利部食品藥物管理署之規定，定期至食品業者登錄系統進行登錄(登錄字號:F-200009175-00001-7) 請安心食用!<p>
-          <p><a href="https://fadenbook.fda.gov.tw/index.aspx" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-placement="right" title="前往食品藥物管理署">前往了解  &raquo;&raquo;</a></p>
+          <p><a href="https://fadenbook.fda.gov.tw/index.aspx" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-
+
+placement="right" title="前往食品藥物管理署">前往了解  &raquo;&raquo;</a></p>
       </div>
     </div>
   </div>
