@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Taiwan code -->
 <html lang="zh-Hant-TW">
 
@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Optional  animate-->
   <link rel="stylesheet" href="css/animate.min.css">
+  <!--小icon-->
+  <link href="img/Sanfu.ico" rel="Shortcut Icon" type="image/x-icon">
   <script src="js/wow.js"></script>
 <script> new WOW().init(); </script>
   <!-- Latest compiled and minified JavaScript -->
@@ -50,26 +52,129 @@ $(function () {
 
 <style type="text/css">
 
-/*大框的背景*/
-.jumbotron{
+/*本店精神*/
+.About{
 
-padding-top: 85px;
-padding-bottom:20px;
-background-color: #579c56;
+background-color:#579c56;
 color: #FFFFFF;
+padding-bottom: 15px;
+ padding: 100px 0;
 
 
 }
+.service-item{
 
+margin-top: 10px;
+margin-bottom: 10px;  
+}
+
+/*藝廊*/
+.slider{
+
+background-color: #579c56;
+padding-bottom: 5px;
+ margin: 0 auto;
+
+}
+.fotorama__wrap {
+    margin: 0 auto;
+}
+/*最新消息*/
+.news{
+
+background-color: #2E8B57 ;
+color: #FFFFFF;
+padding-bottom: 5px;
+
+}
+
+/*首頁框*/
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('img/s14.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+               
+}
+
+.headline {
+    padding: 200px 0;
+}
+
+.headline h1 {
+    font-size: 120px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.headline h2 {
+    font-size: 70px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+
+
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+}
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+  
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
 }
 
 </style>
 <style type="text/css">
-
-.lead {
-font-size: 20px;
-
-}
 
 /*開始探索*/
 .btn-outline{
@@ -79,119 +184,38 @@ font-size: 20px;
     text-shadow: none;
   
   }
+
+  /*本店精神按鈕*/
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
 }
 </style>
 
-<style type="text/css">
-
-/* *********News  timeline  **************************** */
-
-.timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
-}
-
-.timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 3px;
-  background-color: #eeeeee;
-  left: 25px;
-  margin-right: -1.5px;
-}
-
-.timeline > li {
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
-}
-
-.timeline > li:after {
-  clear: both;
-}
-
-.timeline > li > .timeline-panel {
-  width: calc( 100% - 75px );
-  float: right;
-  border: 1px solid #d4d4d4;
-  border-radius: 2px;
-  padding: 20px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-
-.timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  left: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-right: 15px solid #ccc;
-  border-left: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-
-.timeline > li > .timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  left: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-right: 14px solid #fff;
-  border-left: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-
-.timeline > li > .timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.4em;
-  text-align: center;
-  position: absolute;
-  top: 16px;
-  left: 0px;
-  margin-right: -25px;
-  background-color: #999999;
-  z-index: 100;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-.timeline-badge.primary {
-  background-color: #2e6da4 !important;
-}
-
-.timeline-badge.success {
-  background-color: #3f903f !important;
-}
-
-.timeline-badge.warning {
-  background-color: #f0ad4e !important;
-}
-
-.timeline-badge.danger {
-  background-color: #d9534f !important;
-}
-
-.timeline-badge.info {
-  background-color: #5bc0de !important;
-}
-</style>
 <script>
 /* *********Google analysis  **************************** */
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -209,17 +233,15 @@ font-size: 20px;
 footer{
 padding-top: 20px;
 background-color: #2c2c2c;
+color: #FFFFFF;
+
 }
 
-.footer1{
-color: #FFFFFF;
-}
+
 
 </style>
 
-<!--小icon-->
-<link href="img/Sanfu.ico" rel="Shortcut Icon" type="image/x-icon"></link>
-</link>
+
 </head>
   <!-- body start -->
 <body>
@@ -300,6 +322,7 @@ color: #FFFFFF;
   }
 }
 </style>
+
   <!--facebook-->
 
 <div id="fb-root"></div>
@@ -314,7 +337,7 @@ color: #FFFFFF;
   
   <!-- 頁首 -->
 
- <header class="navbar navbar-default navbar-fixed-top" role="banner" data-spy="affix" data-offset-top="80">
+ <div class="navbar navbar-default navbar-fixed-top" role="banner" data-spy="affix" data-offset-top="80">
       <div class="container">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -367,35 +390,31 @@ commenting-o"></i> 留言板</a></li>
             </form>
         </nav>
       </div>
-</header>
+</div>
 
-<!-- 大框 -->
 
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 ">
-        <h1 class="text-center  wow  bounceIn" data-wow-duration="1s">麥味登三福店</h1>  
-        <h4 class="text-center lead  wow  bounceIn" data-wow-duration="2s">Cafe &amp; Tea, Brunch </h4>
-        <h4 class="text-center lead  wow  bounceIn" data-wow-duration="2s">Marvelous, yummy &amp; delectable breakfast</h4>
-        <p></p>
-        <p class="text-center  wow  bounceIn" data-wow-duration="3s"><a href="#jumpToSlider" class="btn btn-lg btn-outline ">開始探索三福店  <i class="fa fa-play-circle-o fa-1x"></i></a>
-        <!--找到新家再加上去 
-          <span class="glyphicon glyphicon-circle-arrow-right"></span>--></p>
-        
-      </div> 
-      <div class="col-md-6 ">
+
+
+    <!-- Full Width Image Header -->
+    <header class="header-image" >
+        <div class="headline">
+            <div class="container">
+               <img src="img/logo.png" alt="logo" class=" img-responsive center-block  wow  bounceIn" data-wow-duration="1s">
+                <img src="img/homepage.png" alt="homepage" class=" img-responsive center-block  wow  bounceIn" data-wow-duration="2s">
+                <p class="text-center  wow  bounceIn" data-wow-duration="3s"><a href="#About" class="btn btn-lg btn-outline ">開始探索三福店  <i class="fa fa-play-circle-o fa-1x "></i></a>
+                  
+        </p>
         <!-- 藝廊 --> 
-        <div class='container' >
           <div class="fotorama"
                data-arrows="true"
                data-click="true"
                data-swipe="true"
                data-autoplay="3000"
-               data-width="700px"
-               data-height="467px"
+               data-width="660px"
+               data-height="440px"
+               data-allowfullscreen="true"
                >
-            <img src="img/1.jpg">
+            <img src="img/1.jpg" >
             <img src="img/s14.jpg">
             <img src="img/s11.jpg">
             <img src="img/b2.jpg">
@@ -408,49 +427,121 @@ commenting-o"></i> 留言板</a></li>
             <img src="img/8.jpg">
             <img src="img/s12.jpg">
           </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <a name="jumpToSlider"></a> <!--定位點(放在這因為浮動標頭會剛好擋住藝廊上方)-->
-</div>
+    </header>
 
-
-
-<br>
- <!-- News 最新消息 -->
-<div class="container">
-  <h2><i class="fa fa-newspaper-o fa-1x"></i> 最新消息 <small class=" wow infinite flash" >News</small></h2>
-    <ul class="timeline wow fadeInLeft">
-      
-      
-        <li class=" wow fadeInLeft">
-          <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">本周特色介紹 <small> 2016.1.26</small></h3>
+   <section class="About" id="About">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>本店精神</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <img src="img/s14.png" alt="套餐"   class=" img-responsive center-block"  >
+                                <h3>
+                                    <strong>食物最多樣</strong>
+                                </h3>
+                                <p>本店的食材相當的多元，除了傳統早餐店有的土司、漢堡、蛋餅外，本店還有許多特色主食，像是義大利麵、潛艇堡、燒餅等等特色商品，還提供不同的套餐組合，顧客可以依照自己的喜好挑選搭配最適合自己的早點!</p>
+                                <a href="http://sanfubrunch.github.io/web/combomeal.html" class="btn btn-dark responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="好評推薦">套餐推薦 &raquo;&raquo;</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <img src="img/s6.png" alt="套餐"   class=" img-responsive center-block"  >
+                                <h3>
+                                    <strong>食材最新鮮</strong>
+                                </h3>
+                                <p>不管是飲料或是食品，本店堅持現點現做，希望保持食物的新鮮與溫度，給顧客最新鮮與熱騰騰的早餐饗宴。</p>
+                                <a href="http://sanfubrunch.github.io/web/specialmeal.html" class="btn btn-dark responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-placement="bottom" title="不能錯過!!">特色推薦  &raquo;&raquo;</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                               <img src="img/s7.png" alt="套餐"   class=" img-responsive center-block"  >
+                                <h3>
+                                    <strong>衛生最安全</strong>
+                                </h3>
+                                <p>本店依法落實自主管理原則，並依照衛生福利部食品藥物管理署之規定，定期至食品業者登錄系統進行登錄(登錄字號:F-200009175-00001-7) 請安心食用!</p>
+                                <a href="https://fadenbook.fda.gov.tw/index.aspx" class="btn btn-dark responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-placement="right" title="前往食品藥物管理署">前往了解  &raquo;&raquo;</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
             </div>
-            <div class="timeline-body">
-              <p>吉事吐司為本店的超級人氣商品，看似普通的土司，當你咬下一口，就會被滿滿的蒜、起司以及奶油的香味填滿您的味蕾，而沙拉又剛好彌補了多片吐司所帶來的乾燥，吃
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
-起來相當順口，絕對值得一試!!</p>
-              <p></p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐
 
-點請參考"特色餐點"</a></p>
-            <img src="img/s1.jpg"  class=" img-responsive" hight="200" width="283">
+<section class="news" id="news">
+
+<!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><i class="fa fa-newspaper-o fa-1x"></i> 最新消息 <h4 class=" wow infinite flash" >News</h4>
+                </h1>
+
             </div>
-          </div>
-        </li>
-      
-      <li class=" wow fadeInLeft">
-          <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">本周特色介紹 <small> 2016.1.7</small></h3>
+        </div>
+        <!-- /.row -->
+
+
+
+        <!-- Project One -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+               <img src="img/homepage.png"  class=" img-responsive" hight="300" width="300">
             </div>
-            <div class="timeline-body">
-              <p>今天介紹的是好吃的漢堡堡!!!!</p>
+            <div class="col-md-7">
+                <h3>公告事項</h3>
+                <h4> 2016.2.7</h4>
+                <p>今天就是除夕夜了~ 祝大家新年快樂</p>
+              <p>本店過年期間營業時間調整公告:</p>
+              <p>營業時段:除夕至初二營業至一點半</p>
+              <p>休息時段:初三、初四店休</p>
+              <p>到初五就正常營業囉!!!!   大家不用怕過年沒早餐吃囉!</p>
+                <a class="btn btn-primary" target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">請參考"特色餐點" <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project One -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/s1.jpg"  class=" img-responsive" hight="300" width="300">
+            </div>
+            <div class="col-md-7">
+                <h3>本周特色介紹</h3>
+                <h4>2016.1.26</h4>
+                <p>吉事吐司為本店的超級人氣商品，看似普通的土司，當你咬下一口，就會被滿滿的蒜、起司以及奶油的香味填滿您的味蕾，而沙拉又剛好彌補了多片吐司所帶來的乾燥，吃起來相當順口，絕對值得一試!!</p>
+                <a class="btn btn-primary" target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">請參考"特色餐點" <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Two -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/b2.jpg"  class=" img-responsive" >
+            </div>
+            <div class="col-md-7">
+                <h3>本周特色介紹</h3>
+                <h4>2016.1.7</h4>
+                <p>今天介紹的是好吃的漢堡堡!!!!</p>
               <p>利用鬆軟的漢堡為基底，鋪上甜甜的美乃滋與健康的小黃瓜，並加上不同的主食肉品，多元美妙的搭配一定讓您回味無窮!!</p>
               <p></p>
               <p>漢堡系列口味:</p>
@@ -462,22 +553,22 @@ commenting-o"></i> 留言板</a></li>
               <p>卡拉雞腿堡</p>
               <p>香烤雞腿堡</p>
               <p></p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/bread.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的吐司漢堡在這
+                <a class="btn btn-primary" target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">請參考"特色餐點" <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
 
-裡!!</a></p>
-            <img src="img/b2.jpg"  class=" img-responsive" hight="400" width="283">
+        <hr>
+
+        <!-- Project Three -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/s3.jpg"  class=" img-responsive" hight="300" width="300">
             </div>
-          </div>
-        </li>
-      
-      <li class=" wow fadeInLeft">
-          <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">本周特色介紹 <small> 2015.12.19</small></h3>
-            </div>
-            <div class="timeline-body">
-              <p>是不是開始吃膩了普通的早餐了?但是也想不到還有什麼可以選嗎?現在你有新的營養早餐可以參考了!!</p>
+            <div class="col-md-7">
+                <h3>本周特色介紹</h3>
+                <h4>2015.12.19</h4>
+                <p>是不是開始吃膩了普通的早餐了?但是也想不到還有什麼可以選嗎?現在你有新的營養早餐可以參考了!!</p>
               <p>利用厚片做為基底，鋪上甜甜的玉米與美乃滋，再加上不同的主食肉品，最後撒上滿滿的起司放入烤箱烘烤，美妙的滋味一定讓您回味無窮!!</p>
               <p></p>
               <p>焗烤系列口味:</p>
@@ -485,172 +576,93 @@ commenting-o"></i> 留言板</a></li>
               <p>鮪魚焗烤</p>
               <p>火腿焗烤</p>
               <p>總匯焗烤</p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐
-
-點請參考"特色餐點"</a></p>
-            <img src="img/s3.jpg"  class=" img-responsive" hight="200" width="283">
+                <a class="btn btn-primary" target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">請參考"特色餐點" <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-          </div>
-        </li>
-      
-      <li class=" wow fadeInLeft">
-          <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">本周特色介紹 <small> 2015.12.13</small></h3>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Four -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/s2.jpg"  class=" img-responsive" hight="300" width="300">
             </div>
-            <div class="timeline-body">
-              <p>燒餅系列</p>
-              <p>燒餅是許多傳統豆漿店必賣的傳統早點，也是顧客回憶中的美食。本店的千層燒餅可搭配許多不同材料來符合消費者口味，像是培根、鮮蔬、幸力蛋等等，不同的搭配都會
-
-別有一番風味喔!!</p>
-              <p><a  target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">更多不同的特色餐
-
-點請參考"特色餐點"</a></p>
-            
-            <img src="img/s2.png"  class=" img-responsive" hight="200" width="283">
+            <div class="col-md-7">
+                <h3>本周特色介紹</h3>
+                <h4>2016.1.26</h4>
+                <p>燒餅系列</p>
+              <p>燒餅是許多傳統豆漿店必賣的傳統早點，也是顧客回憶中的美食。本店的千層燒餅可搭配許多不同材料來符合消費者口味，像是培根、鮮蔬、幸力蛋等等，不同的搭配都會別有一番風味喔!!</p>
+                <a class="btn btn-primary" target="_blank" href="http://sanfubrunch.github.io/web/specialmeal.html" data-toggle="tooltip" data-placement="top" title="點我">請參考"特色餐點" <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-          </div>
-        </li>
-      
-       <li class=" wow fadeInLeft">
-          <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">本周介紹 <small> 2015.12.4</small></h3>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Five -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/c2.jpg"  class=" img-responsive" >
             </div>
-            <div class="timeline-body">
-              <p>本周商品介紹:義大利麵系列</p>
-              <p>義大利麵是本店的熱門招牌商品，假日時常會賣到供不應求呢!!義大利麵在本店目前有11種不同的口味，除了常見的蘑菇與黑胡椒醬以外，還有青醬、白醬(奶油)與紅醬(
-
-茄汁)的選擇，再搭配不同合適的肉品，是不是相當的多元呢!</p>
-            <img src="img/c2.jpg"  class=" img-responsive" hight="400" width="283">
+            <div class="col-md-7">
+                <h3>本周特色介紹:義大利麵系列</h3>
+                <h4>2015.12.4</h4>
+                <p>義大利麵是本店的熱門招牌商品，假日時常會賣到供不應求呢!!義大利麵在本店目前有11種不同的口味，除了常見的蘑菇與黑胡椒醬以外，還有青醬、白醬(奶油)與紅醬(茄汁)的選擇，再搭配不同合適的肉品，是不是相當的多元呢!</p>
+               
             </div>
-          </div>
-        </li>
-      
-      <li class=" wow fadeInLeft">
-          <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">本周套餐介紹 <small> 2015.11.18</small></h3>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+        <!-- Project Five -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/i1.jpg"  class=" img-responsive"  hight="300" width="300">
             </div>
-            <div class="timeline-body">
-              <p>本周套餐推薦:法式套餐、樂活套餐、招牌套餐</p>
-              <p>這三個套餐都是本店最熱銷的套餐組合之一，所有套餐組合都附有15元飲品一杯(補差額可換購部分其他飲品，詳細情形請詢問店家)，套餐除了自己本身都有自己的特色以
-
-外，都附有生菜沙拉的搭配，讓顧客吃得輕鬆毫無負擔。請多多支持套餐組合喔!!!</p>
-            <img src="img/i1.jpg"  class=" img-responsive" hight="200" width="283">
+            <div class="col-md-7">
+                <h3>本周套餐介紹</h3>
+                <h4> 2015.11.18</h4>
+                <p>這三個套餐都是本店最熱銷的套餐組合之一，所有套餐組合都附有15元飲品一杯(補差額可換購部分其他飲品，詳細情形請詢問店家)，套餐除了自己本身都有自己的特色以外，都附有生菜沙拉的搭配，讓顧客吃得輕鬆毫無負擔。請多多支持套餐組合喔!!!</p>
             </div>
-          </div>
-        </li>
-      
-     
-        
-        <li class=" wow fadeInLeft">
-          <div class="timeline-badge info"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">最新商品推薦 <small> 2015.10.26</small></h3>
+        </div>
+        <!-- /.row -->
+          <hr>
+
+        <!-- Project Five -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/homepage.png"  class=" img-responsive"  hight="300" width="300">
             </div>
-            <div class="timeline-body">
-              <p>即日起，本店推出特色餐點" 焗烤系列 "，有培根、火腿、鮪魚、總匯多種口味!! 利用厚片做為基底，放上香噴噴的材料再淋上特製水果醬，最後在鋪上一層滿滿的起司
-
-進入烤箱。這特別的味道必定會讓您回味無窮... <a  target="_blank" 
-
-href="https://www.facebook.com/mwdLongsingSt/photos/a.318037694949131.73101.317193521700215/452066318212934/?type=3&theater" data-toggle="tooltip" data-placement="top" 
-
-title="讚">詳細資料></a></p>
+            <div class="col-md-7">
+                <h3>套餐太划算</h3>
+                <h4>2015.10.25</h4>
+                <p>本店套餐系列都會贈送NT$15飲料一杯，不管紅茶、奶茶、檸檬紅茶等等超級好喝的飲品任你/妳挑選，可以自由搭配自己喜歡的組合喔!!(超過NT$15之飲品要補差額，部分商品無法補差價詳見官網資訊)... <a  target="_blank" href="https://www.facebook.com/mwdLongsingSt/photos/a.747077575378472.1073741825.317193521700215/747077522045144/?type=3&theater" data-toggle="tooltip" data-placement="top" title="讚">詳細資料></a></p>
             </div>
-          </div>
-        </li>
-        
-        <li class=" wow fadeInLeft">
-          <div class="timeline-badge primary"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">套餐太划算<small> 2015.10.25</small></h3>
+        </div>
+        <!-- /.row -->
+          <hr>
+
+        <!-- Project Five -->
+        <div class="row wow fadeInLeft">
+            <div class="col-md-5">
+                    <img src="img/homepage.png"  class=" img-responsive"  hight="300" width="300">
             </div>
-            <div class="timeline-body">
-              <p>本店套餐系列都會贈送NT$15飲料一杯，不管紅茶、奶茶、檸檬紅茶等等超級好喝的飲品任你/妳挑選，可以自由搭配自己喜歡的組合喔!!(超過NT$15之飲品要補差額，部分
-
-商品無法補差價詳見官網資訊)... <a  target="_blank" href="https://www.facebook.com/mwdLongsingSt/photos/a.747077575378472.1073741825.317193521700215/747077522045144/?
-
-type=3&theater" data-toggle="tooltip" data-placement="top" title="讚">詳細資料></a></p>
+            <div class="col-md-7">
+                <h3>歡迎光臨!!</h3>
+                <h4>2015.10.24</h4>
+                 <p>麥味登三福店誠摯地邀請您享用好吃的早午餐!!</p>
             </div>
-          </div>
-        </li>
-        
-        <li class=" wow fadeInLeft">
-          <div class="timeline-badge warning"><i class="fa fa-newspaper-o fa-1x"></i></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3 class="timeline-title lead">歡迎光臨!!<small> 2015.10.24</small></h3>
-            </div>
-            <div class="timeline-body">
-              <p>麥味登三福店誠摯地邀請您享用好吃的早午餐!!</p>
-            </div>
-          </div>
-        </li>
-        
-        
-       
-    </ul>
-</div>
+        </div>
+        <!-- /.row -->
 
-
-  <!-- 說明 -->
-
-<div class="container">
-<div class="row" >
-  <div class="col-sm-6 col-md-4   wow  fadeInUp" data-wow-duration="1s" >
-    <div class="thumbnail">
-      <img src="img/6.jpg" alt="套餐">
-      <div class="caption">
-         <h2>食物最多樣</h2>
-        <p>本店的食材相當的多元，除了傳統早餐店有的土司、漢堡、蛋餅外，本店還有許多特色主食，像是義大利麵、潛艇堡、燒餅等等特色商品，還提供不同的套餐組合，顧客可以依照
-
-自己的喜好挑選搭配最適合自己的早點!<p>
-          <p><a href="http://sanfubrunch.github.io/web/combomeal.html" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" 
-
-data-placement="bottom" title="好評推薦">套餐推薦 &raquo;&raquo;</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4  wow  fadeInUp" data-wow-duration="2s" >
-    <div class="thumbnail">
-      <img src="img/3.jpg" alt="套餐">
-      <div class="caption">
-        <h2>食材最新鮮</h2>
-          <p>不管是飲料或是食品，本店堅持現點現做，希望保持食物的新鮮與溫度，給顧客最新鮮與熱騰騰的早餐饗宴。<p>
-          
-          <p><a href="http://sanfubrunch.github.io/web/specialmeal.html" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" 
-
-data-placement="bottom" title="不能錯過!!">特色推薦  &raquo;&raquo;</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4  wow  fadeInUp" data-wow-duration="3s"  >
-    <div class="thumbnail">
-      <img src="img/5.jpg" alt="套餐">
-      <div class="caption">
-        <h2>衛生最安全</h2>
-            <p>本店依法落實自主管理原則，並依照衛生福利部食品藥物管理署之規定，定期至食品業者登錄系統進行登錄(登錄字號:F-200009175-00001-7) 請安心食用!<p>
-          <p><a href="https://fadenbook.fda.gov.tw/index.aspx" class="btn btn-primary responsive-width" role="button" target="_blank"  data-toggle="tooltip" data-
-
-placement="right" title="前往食品藥物管理署">前往了解  &raquo;&raquo;</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
+</section>
 
 
    <!-- 頁尾 -->
 <footer>
  
-<div align="center" class="footer1">
+<div align="center" >
   <div class="container">
 <address>
   <strong>Copyright &copy 2016 All Rights Reserved.</strong> <strong>Design by Chi-lun Huang</strong> <br>
