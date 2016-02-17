@@ -1,9 +1,9 @@
-
+ï»¿
 /* CREATED BY CHI-LUN HUANG
  * -------------------------- */
 
 
-/*¥»©±ºë¯«*/
+/*æœ¬åº—ç²¾ç¥*/
 .About{
 
 background-color:#579c56;
@@ -19,18 +19,11 @@ margin-top: 10px;
 margin-bottom: 10px;  
 }
 
-/*ÃÀ´Y*/
-.slider{
 
-background-color: #579c56;
-padding-bottom: 5px;
- margin: 0 auto;
-
-}
 .fotorama__wrap {
     margin: 0 auto;
 }
-/*³Ì·s®ø®§*/
+/*æœ€æ–°æ¶ˆæ¯*/
 .news{
 
 background-color: #2E8B57 ;
@@ -41,16 +34,18 @@ padding-bottom: 5px;
 
 
 
-/*¶}©l±´¯Á*/
+/*é–‹å§‹æ¢ç´¢*/
 .btn-outline{
     color: #fff;
     background-color: transparent;
     border-color: #fff;
     text-shadow: none;
+    font-size: 20px;
+    
   
   }
 
-  /*¥»©±ºë¯««ö¶s*/
+  /*æœ¬åº—ç²¾ç¥æŒ‰éˆ•*/
 .btn-light {
     border-radius: 0;
     color: #333;
@@ -78,7 +73,7 @@ padding-bottom: 5px;
 }
 
 
-/*­º­¶¼ĞÀY*/
+/*é¦–é æ¨™é ­*/
 
 
 .navbar-default {
@@ -272,7 +267,7 @@ color: #FFFFFF;
 }
 
 
-/*¤j®Øªº­I´º*/
+/*å¤§æ¡†çš„èƒŒæ™¯*/
 .jumbotron{
 
 padding-top: 65px;
@@ -281,4 +276,40 @@ background-color: #579c56;
 color: #FFFFFF;
 
 
+}
+/*å›åˆ°æœ€é ‚*/
+.back-to-top {
+ 
+background: none;
+ 
+margin: 0;
+ 
+position: fixed;
+ 
+bottom: 0;
+ 
+right: 0;
+ 
+width: 60px;
+ 
+height: 60px;
+ 
+z-index: 100;
+ 
+display: none;
+ 
+text-decoration: none;
+ 
+color: #ffffff;
+ 
+background-color: none;
+ 
+}
+ 
+  
+ 
+.back-to-top i {
+ 
+  font-size: 60px;
+ 
 }
