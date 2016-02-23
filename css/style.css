@@ -39,9 +39,9 @@ padding-bottom: 5px;
     color: #fff;
     background-color: transparent;
     border-color: #fff;
+    border-width: 2.5px;
     text-shadow: none;
     font-size: 20px;
-    
   
   }
 
@@ -133,6 +133,7 @@ padding-bottom: 5px;
 .navbar-default .navbar-link:hover {
   color: #ffffff;
 }
+
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
