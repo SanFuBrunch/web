@@ -31,6 +31,9 @@
   <!-- Slider template from fotorama-->
 <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>  
+<!-- jquery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
 <!-- style.css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Facebook widgets JavaScript (from https://app.getsitecontrol.com/) -->
@@ -152,6 +155,7 @@ $(function () {
 }
 
 </style>
+
 
 
 </head>
@@ -539,12 +543,7 @@ commenting-o"></i> 留言板</a></li>
 </section>
 
 
-<a href="#header-image" class="back-to-top responsive-width" style="display: inline;">
- 
-<i class="fa fa-arrow-circle-up"></i>
- 
-</a>
-
+<a   href="#header-image" class="back-to-top responsive-width" style="display: inline;"><i class="fa fa-arrow-circle-up"></i></a>
 
 
    <!-- 頁尾 -->
@@ -562,9 +561,27 @@ commenting-o"></i> 留言板</a></li>
 </div>
 
 </footer>
+<script type="text/javascript">
+// create the back to top button
+$('body').prepend('<a   href="#header-image" class="back-to-top responsive-width" style="display: inline;"><i class="fa fa-arrow-circle-up"></i></a>');
 
+var amountScrolled = 300;
 
+$(window).scroll(function() {
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('a.back-to-top').fadeIn('slow');
+  } else {
+    $('a.back-to-top').fadeOut('slow');
+  }
+});
 
-  
+$('a.back-to-top, a.simple-back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 700);
+  return false;
+});
+</script>
+
 </body>
 </html>
