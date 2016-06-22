@@ -6,8 +6,8 @@
 /*本店精神*/
 .About{
 
-background-color: #455A64;
-color: #FFFFFF;
+background-color: #E38EFF;
+color: #00000;
 padding-bottom: 15px;
  padding: 100px 0;
 
@@ -26,8 +26,8 @@ margin-bottom: 10px;
 /*最新消息*/
 .news{
 
-background-color:#607D8B ;
-color: #FFFFFF;
+background-color:#F0BBFF ;
+color: #000000;
 padding-bottom: 5px;
 
 }
